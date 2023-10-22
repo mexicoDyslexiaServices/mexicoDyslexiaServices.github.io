@@ -2333,7 +2333,7 @@ input, select, textarea {
 
 			#header nav ul {
 				list-style: none;
-				padding-left: 0;
+				align-items: center;
 			}
 
 				#header nav ul li {
@@ -2420,7 +2420,7 @@ input, select, textarea {
 
 			#header.alt nav {
 				right: 2.5em;
-				top: 1.75em;
+				top: 2.5em;
 			}
 
 				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
@@ -2535,7 +2535,7 @@ input, select, textarea {
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
-		margin-top: 6em;
+		margin-top: 5em;
 	}
 
 		#banner .inner {

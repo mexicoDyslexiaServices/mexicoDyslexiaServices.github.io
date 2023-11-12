@@ -2131,6 +2131,11 @@ th {
 
 	table {
 		width: 100%;
+		border: 2px solid;
+	}
+
+	table, th, td {
+		border: 1px solid;
 	}
 
 		table.default {
@@ -2148,7 +2153,7 @@ th {
 			table.default th {
 				font-weight: 400;
 				padding: 0.5em 1em 0.5em 1em;
-				text-align: left;
+				text-align: center;
 			}
 
 			table.default thead {

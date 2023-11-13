@@ -85,6 +85,14 @@ input, select, textarea {
 
 }
 
+.wrapper-small {
+	margin-bottom: 1em;
+}
+
+.mid-blue {
+	background-color: #004E43;
+}
+
 #misconceptions {
 	width: 100%;
 	border-collapse: collapse;
@@ -1752,6 +1760,10 @@ th {
 		text-align: left;
 	}
 
+	section mid-blue {
+		background-color: #54424B;
+	}
+
 	header.major {
 		padding-bottom: 2em;
 	}
@@ -2259,6 +2271,22 @@ th {
 			color: #fff;
 		}
 
+		.wrapper.style2.mid-blue {
+			background-color: #004E43;
+			background-position: bottom left, bottom right;
+			background-repeat: no-repeat, no-repeat;
+			background-size: 25em, 25em;
+			color: #fff;
+		}
+
+		.wrapper.style2.mid-purple {
+			background-color: #54424B;
+			background-position: bottom left, bottom right;
+			background-repeat: no-repeat, no-repeat;
+			background-size: 25em, 25em;
+			color: #fff;
+		}
+
 			.wrapper.style2 input[type="button"]:hover,
 			.wrapper.style2 input[type="submit"]:hover,
 			.wrapper.style2 input[type="reset"]:hover,
@@ -2630,6 +2658,10 @@ th {
 
 			#banner .inner footer {
 				margin: 2em 0 0 0;
+			}
+
+			#banner .hidden {
+				background-size: 1em;
 			}
 
 /* Main */

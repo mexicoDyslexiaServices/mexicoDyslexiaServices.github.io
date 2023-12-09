@@ -76,6 +76,10 @@ input, select, textarea {
 	text-align: center;
 }
 
+vert_centered {
+	vertical-align: middle;
+}
+
 .aln-left {
 	text-align: left;
 }
@@ -2271,6 +2275,13 @@ th {
 			color: #fff;
 		}
 
+		.smaller {
+			background-size: 60%;
+			max-height: 25rem;
+			margin-top: 12rem;
+			margin-left: 1.5rem;
+		}
+
 		.wrapper.style2.mid-blue {
 			background-color: #004E43;
 			background-position: bottom left, bottom right;
@@ -2437,6 +2448,11 @@ th {
 
 					#header nav ul li.submenu > a {
 						text-decoration: none;
+					}
+
+					.no_decor {
+						text-decoration: none;
+						color: white;
 					}
 
 						#header nav ul li.submenu > a:before {

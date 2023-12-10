@@ -2282,6 +2282,13 @@ th {
 			margin-left: 1.5rem;
 		}
 
+		.smaller2 {
+			background-size: 60%;
+			max-height: 25rem;
+			margin-top: 5rem;
+			margin-left: 1.5rem;
+		}
+
 		.wrapper.style2.mid-blue {
 			background-color: #004E43;
 			background-position: bottom left, bottom right;

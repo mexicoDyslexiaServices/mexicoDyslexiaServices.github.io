@@ -2816,8 +2816,14 @@ th {
 				padding-top: 0;
 			}
 
+			body {
+				#main.index.about {
+					padding: 1em;
+			}
+
 			#main.about {
-				padding: 2em;
+				padding-top: 0em;
+				padding: 0em;
 			}
 		/* Wrapper */
 

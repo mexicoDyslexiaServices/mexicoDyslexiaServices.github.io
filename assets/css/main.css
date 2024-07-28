@@ -86,7 +86,8 @@ vert_centered {
 
 .logolist img {
 	margin-left: 3em;
-
+	vertical-align: middle;
+	margin-bottom: 1em;
 }
 
 .wrapper-small {
@@ -1827,7 +1828,7 @@ th {
 	}
 
 	footer.major {
-		padding-top: 3em;
+		padding-top: 2em;
 	}
 
 /* Form */
@@ -2680,7 +2681,7 @@ th {
 				}
 
 			#banner .inner footer {
-				margin: 2em 0 0 0;
+				margin: 0 0 0 0;
 			}
 
 			#banner .hidden {
@@ -2727,12 +2728,12 @@ th {
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
 		color: #fff;
-		padding: 5em;
+		padding: 2em;
 		text-align: center;
 	}
 
 		#cta header {
-			margin-bottom: 2em;
+			margin-bottom: 1em;
 		}
 
 /* Footer */
@@ -2740,7 +2741,7 @@ th {
 	#footer {
 		background: #E8EEF4;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		padding: 2em 2em 2em 2em;
 		text-align: center;
 	}
 
@@ -2811,7 +2812,20 @@ th {
 				padding-top: 2em;
 			}
 
+			#about.special.container {
+				padding-top: 0;
+			}
+
+			#main.about {
+				padding: 2em;
+			}
 		/* Wrapper */
+
+		#articles.wrapper {
+			margin-bottom: 1em;
+			padding-top: 3em;
+			padding-bottom: 0em;
+		}
 
 			.wrapper {
 				margin-bottom: 4em;
@@ -3396,6 +3410,11 @@ th {
 
 			body.contact #main {
 				padding-bottom: 0;
+			}
+
+			#articles {
+				padding: 0em;
+				margin-bottom: em;
 			}
 
 		/* CTA */

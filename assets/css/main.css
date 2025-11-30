@@ -3463,5 +3463,22 @@ th {
 				width: 50px;
 				height: 34px;
 			}
-
 	}
+
+
+/* Team photos: Celia, Tica, Ellie */
+.team-photo {
+    display: block;
+    width: 100%;        /* fill the column width */
+    max-width: 300px;   /* change this to 280, 350, 400, etc as you like */
+    height: auto;       /* maintain aspect ratio, no distortion */
+    border-radius: 8px;
+    margin: 0 auto 1em; /* center within the column */
+}
+
+/* Override the template's .image.fit img rule for team photos */
+.image.fit img.team-photo {
+    width: 100%;        /* fill the column */
+    max-width: 600px;   /* change this to whatever size you want */
+    height: auto;       /* keep proportions */
+}

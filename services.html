@@ -3,6 +3,8 @@ layout: default
 title: Services
 ---
 
+{% assign services = site.services | sort: "order" %}
+
 <!-- Main -->
 <article id="main">
 
@@ -18,9 +20,9 @@ title: Services
 			</div>
 			<div class="col-4 col-12-narrower imp-narrower">
 				<ul class="featured-icons">
-					<span class="icon solid featured fa-list"></span>
-					<span class="icon solid featured fa-comments"></span>
-					<span class="icon solid featured fa-handshake"></span>
+					{% for service in services %}
+					<span class="icon solid featured {{ service.icon }}"></span>
+					{% endfor %}
 				</ul>
 			</div>
 		</div>
@@ -29,55 +31,21 @@ title: Services
 	<!-- Two -->
 	<section class="wrapper style1 container special">
 		<div class="row">
+			{% for service in services %}
 			<div class="col-4 col-12-narrower">
 				<section>
-					<span class="icon solid featured fa-list"></span>
+					<span class="icon solid featured {{ service.icon }}"></span>
 					<header>
-						<h3><strong>Assessment</strong></h3>
+						<h3><strong>{{ service.title }}</strong></h3>
 					</header>
-					<ul class="services">
-						<li>A comprehensive psychoeducational evaluation used to measure the strengths and weaknesses of your child to provide diagnostic results (i.e, specific learning disabilities, speech & language disorders and executive functioning concerns). This assessment includes multiple steps to accurately assess and diagnose using standardized tools.</li>
-						<li>Full Case History: Family, early life & academic history</li>
-						<li>Diagnostic Report: Findings and recommendations for therapy goals and school accommodations</li>
-						<li>Parent Meeting: Discussion of findings, recommendations, and next steps</li>
-						<li>Price: Determined on individual basis</li>
+					<ul{% if service.list_class %} class="{{ service.list_class }}"{% endif %}>
+						{% for item in service.details %}
+						<li>{{ item }}</li>
+						{% endfor %}
 					</ul>
 				</section>
 			</div>
-			<div class="col-4 col-12-narrower">
-				<section>
-					<span class="icon solid featured fa-comments"></span>
-					<header>
-						<h3><strong>Therapy</strong></h3>
-					</header>
-					<ul>
-						<li>Intervention Sessions: 50-minute individualized interventions systematically targeting phonological awareness, phonics, spelling patterns, and morphology session with Orton-Gillingham certified instructor</li>
-						<li>Caregiver Discussions: 10-minute care-giver discussions, homework handover, note writing, correspondence, and other administrative tasks associated with the care of your child</li>
-						<li>Resources: Preparation of therapy resources and home programming for your child</li>
-						<li>Flexible Location: Option of clinic, home, virtual or school-based (additional travel fees may apply)</li>
-						<li>Price: $125 USD per session</li>
-					</ul>
-				</section>
-			</div>
-			<div class="col-4 col-12-narrower">
-				<section>
-					<span class="icon solid featured fa-handshake"></span>
-					<header>
-						<h3><strong>Consultation</strong></h3>
-					</header>
-					<ul>
-						<li>School Consultation: Collaboration meetings with the child's school team to help integrate successful therapeutic approaches into their classroom setting
-							<ul><li>Price: $125 USD per hour</li></ul>
-						</li>
-						<li>Family Consultation: Up-skilling parents on how they can best support their child's literacy development in the home setting
-							<ul><li>Price: $125 per hour</li></ul>
-						</li>
-						<li>School Trainings: Up-skilling school teams on how to identify struggling readers and utilize Orton-Gillingham based approaches within the classroom for the whole group
-							<ul><li>Price: Available on request</li></ul>
-						</li>
-					</ul>
-				</section>
-			</div>
+			{% endfor %}
 		</div>
 	</section>
 

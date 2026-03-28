@@ -6,6 +6,14 @@ phone: ""
 baseurl: ""
 url: "https://mexicoDyslexiaServices.github.io"
 
+collections:
+  team:
+    output: false
+  services:
+    output: false
+  articles:
+    output: false
+
 # Exclude template/unused files from Jekyll processing
 exclude:
   - left-sidebar.html

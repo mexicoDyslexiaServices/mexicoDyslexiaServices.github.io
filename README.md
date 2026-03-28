@@ -7,11 +7,11 @@ Website for [Young Minds Literacy & Learning](https://mexicoDyslexiaServices.git
 | File | URL | Description |
 |------|-----|-------------|
 | `index.html` | `/` | Home page — overview of services and team |
-| `about.html` | `/about` | Meet the team |
-| `services.html` | `/services` | Services and pricing |
-| `signs.html` | `/signs` | Signs of dyslexia by age group |
-| `orton-gillingham.html` | `/orton-gillingham` | What dyslexia is and how OG intervention works |
-| `misconceptions.html` | `/misconceptions` | Common dyslexia myths (embedded Canva slides) |
+| `about.html` | `/about.html` | Meet the team |
+| `services.html` | `/services.html` | Services and pricing |
+| `signs.html` | `/signs.html` | Signs of dyslexia by age group |
+| `orton-gillingham.html` | `/orton-gillingham.html` | What dyslexia is and how OG intervention works |
+| `misconceptions.html` | `/misconceptions.html` | Common dyslexia myths (embedded Canva slides) |
 
 ## Making edits
 

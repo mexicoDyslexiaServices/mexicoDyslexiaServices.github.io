@@ -95,11 +95,11 @@ title: Young Minds
 			{% if mod == 0 %}<div class="row">{% endif %}
 			<div class="col-6 col-12-narrower">
 				<section>
-					<a href="{{ article.url }}" class="image featured"{% if article.external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+					<a href="{{ article.link }}" class="image featured"{% if article.external %} target="_blank" rel="noopener noreferrer"{% endif %}>
 						<img src="/images/{{ article.image }}" alt="{{ article.image_alt }}" />
 					</a>
 					<section>
-						<a href="{{ article.url }}" style="text-decoration: none; color: inherit;"{% if article.external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+						<a href="{{ article.link }}" style="text-decoration: none; color: inherit;"{% if article.external %} target="_blank" rel="noopener noreferrer"{% endif %}>
 							<header><h3>{{ article.title }}</h3></header>
 						</a>
 						<p class="aln-left">{{ article.content | strip_html | strip }}</p>

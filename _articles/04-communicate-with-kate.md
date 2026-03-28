@@ -2,7 +2,7 @@
 title: Communicate with Kate
 image: cwk_clinc.jpeg
 image_alt: ""
-url: https://www.speechtherapymexico.com/
+link: https://www.speechtherapymexico.com/
 external: true
 order: 4
 ---

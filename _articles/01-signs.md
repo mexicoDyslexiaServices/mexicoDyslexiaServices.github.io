@@ -2,7 +2,7 @@
 title: Signs of dyslexia
 image: children_in_class.jpg
 image_alt: Children in class
-url: /signs.html
+link: /signs.html
 order: 1
 ---
 

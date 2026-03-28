@@ -2,7 +2,7 @@
 title: Dyslexia misconceptions
 image: dyslexia_definition.jpg
 image_alt: ""
-url: /misconceptions.html
+link: /misconceptions.html
 order: 3
 ---
 

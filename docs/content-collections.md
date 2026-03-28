@@ -29,3 +29,5 @@ Three Jekyll Collections added, each as a folder of Markdown files:
 `_config.yml` updated to register all three collections with `output: false` (no individual pages generated).
 
 `EDITING.md` updated with plain-English instructions for all three collections.
+
+`.gitignore` added to exclude Jekyll build artifacts (`_site/`, `.jekyll-cache/`, `.sass-cache/`) and macOS metadata (`.DS_Store`). Both `.DS_Store` files were removed from git tracking.

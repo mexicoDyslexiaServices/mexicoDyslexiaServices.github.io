@@ -1,0 +1,11 @@
+<!-- Header -->
+<header id="header" class="alt">
+	<img src="/images/logo.png" alt="YM Logo" width="175">
+	<nav id="nav">
+		<ul>
+			<li {% if page.url == "/index.html" or page.url == "/" %}class="current"{% endif %}><a href="/index.html">Home</a></li>
+			<li {% if page.url == "/about.html" %}class="current"{% endif %}><a href="/about.html">About</a></li>
+			<li {% if page.url == "/services.html" %}class="current"{% endif %}><a href="/services.html">Services</a></li>
+		</ul>
+	</nav>
+</header>

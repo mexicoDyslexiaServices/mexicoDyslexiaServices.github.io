@@ -27,6 +27,12 @@ Each person on the About page is a file in `_team/`. To edit someone's bio, open
 1. Delete their file from `_team/`
 2. Delete their photo from `images/`
 
+**To preview the layout before adding a real person:**
+1. Copy any existing photo in `images/` and rename it (e.g. `test-employee.jpg`)
+2. Create `_team/04-test-employee.md` using the structure of an existing team file
+3. Check `localhost:4000/about.html` to see how it looks
+4. Delete both files when done
+
 ## Services (`_services/`)
 
 Each service (Assessment, Therapy, Consultation) is a file in `_services/`. The `summary` list appears on the home page; the `details` list appears on the Services page. Edit either list by adding, removing, or changing the `- "..."` lines.

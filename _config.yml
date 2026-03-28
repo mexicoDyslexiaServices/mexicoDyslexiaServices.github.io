@@ -1,0 +1,17 @@
+encoding: utf-8
+title: Young Minds Literacy & Learning
+email: celiayoungminds@gmail.com
+calendly: https://calendly.com/youngmindsdyslexiacenter
+phone: ""
+baseurl: ""
+url: "https://mexicoDyslexiaServices.github.io"
+
+# Exclude template/unused files from Jekyll processing
+exclude:
+  - left-sidebar.html
+  - right-sidebar.html
+  - no-sidebar.html
+  - contact.html
+  - README.md
+  - LICENSE
+  - "*.LICENSE.txt"

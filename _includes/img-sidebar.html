@@ -1,4 +1,4 @@
-<div class="col-4 col-12-narrower imp-narrower">
-	<img src="/images/{{ include.src }}" alt="{{ include.alt }}" width="275px"/>
+<div class="col-4 col-12-narrower imp-narrower{% if include.wrapper_class %} {{ include.wrapper_class }}{% endif %}">
+	<img src="/images/{{ include.src }}" alt="{{ include.alt }}" width="275"{% if include.img_class %} class="{{ include.img_class }}"{% endif %}{% if include.img_style %} style="{{ include.img_style }}"{% endif %}/>
 	{% if include.caption %}<p>{{ include.caption }}</p>{% endif %}
 </div>

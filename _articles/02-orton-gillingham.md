@@ -1,7 +1,7 @@
 ---
 title: Dyslexia and Orton-Gillingham
 image: dyslexia_orton_gillingham.jpeg
-image_alt: ""
+image_alt: "Dyslexia and Orton-Gillingham"
 link: /orton-gillingham.html
 order: 2
 ---

@@ -1,7 +1,7 @@
 ---
 title: Communicate with Kate
 image: cwk_clinc.jpeg
-image_alt: ""
+image_alt: "Logo for Communicate with Kate speech and language clinic"
 link: https://www.speechtherapymexico.com/
 external: true
 order: 4

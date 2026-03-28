@@ -1,7 +1,7 @@
 ---
 title: Dyslexia misconceptions
 image: dyslexia_definition.jpg
-image_alt: ""
+image_alt: "Illustration of the definition of dyslexia"
 link: /misconceptions.html
 order: 3
 ---

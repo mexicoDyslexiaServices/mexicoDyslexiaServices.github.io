@@ -18,9 +18,20 @@ Edit `_includes/footer.html`
 
 Each person on the About page is a file in `_team/`. To edit someone's bio, open their file and edit the text below the `---` line. The front matter (between the `---` lines at the top) holds their name, title, and photo filename.
 
-**To add a team member:** copy any existing file, rename it (use a number prefix to control order, e.g. `04-newperson.md`), and fill in the details.
+**To add a team member:**
+1. Drop their photo into the `images/` folder
+2. Copy any existing `_team/` file, rename it with the next number prefix (e.g. `04-newperson.md`)
+3. Update the name, credentials, photo filename, and bio
 
-**To remove a team member:** delete their file.
+**To remove a team member:**
+1. Delete their file from `_team/`
+2. Delete their photo from `images/`
+
+**To preview the layout before adding a real person:**
+1. Copy any existing photo in `images/` and rename it (e.g. `test-employee.jpg`)
+2. Create `_team/04-test-employee.md` using the structure of an existing team file
+3. Check `localhost:4000/about.html` to see how it looks
+4. Delete both files when done
 
 ## Services (`_services/`)
 

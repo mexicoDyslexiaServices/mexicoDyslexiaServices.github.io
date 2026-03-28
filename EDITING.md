@@ -12,6 +12,32 @@ Edit `_includes/cta.html`
 ## Footer logos
 Edit `_includes/footer.html`
 
+---
+
+## Team members (`_team/`)
+
+Each person on the About page is a file in `_team/`. To edit someone's bio, open their file and edit the text below the `---` line. The front matter (between the `---` lines at the top) holds their name, title, and photo filename.
+
+**To add a team member:** copy any existing file, rename it (use a number prefix to control order, e.g. `04-newperson.md`), and fill in the details.
+
+**To remove a team member:** delete their file.
+
+## Services (`_services/`)
+
+Each service (Assessment, Therapy, Consultation) is a file in `_services/`. The `summary` list appears on the home page; the `details` list appears on the Services page. Edit either list by adding, removing, or changing the `- "..."` lines.
+
+**To update pricing:** find the relevant `details` entry and change the price text at the end of the line.
+
+## Articles / "Discover more" cards (`_articles/`)
+
+Each card in the "Discover more about learning differences" section on the home page is a file in `_articles/`. The blurb text goes below the `---` line; the image, link, and title are in the front matter above.
+
+**To add a new card:** create a new file like `05-new-topic.md` with the same structure as the others. The number prefix controls the order.
+
+**To link to an external site:** add `external: true` to the front matter.
+
+---
+
 ## Page content
 Each page is its own file at the root:
 - `index.html` — Home page
@@ -30,8 +56,5 @@ title: Page Title
 ```
 Don't edit that block — just edit the HTML content below it.
 
-## Adding a new team member
-Open `about.html` and copy one of the existing team member blocks (between `<!-- Tica -->` and `<!-- Ellie -->`).
-
 ## Images
-Drop new image files into the `images/` folder, then reference them as `/images/your-file.jpg` in the HTML.
+Drop new image files into the `images/` folder, then reference them as `/images/your-file.jpg` in the HTML or front matter.

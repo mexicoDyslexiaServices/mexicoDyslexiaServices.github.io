@@ -60,109 +60,55 @@ title: Young Minds
 	</section>
 
 	<!-- Two -->
+	{% assign services = site.services | sort: "order" %}
 	<section class="wrapper style1 container special">
 		<div class="row">
+			{% for service in services %}
 			<div class="col-4 col-12-narrower">
 				<section>
-					<span class="icon solid featured fa-list"></span>
+					<span class="icon solid featured {{ service.icon }}"></span>
 					<a href="/services.html" style="text-decoration: none; color: inherit;">
 					<header>
-						<h3><strong>Assessment</strong></h3>
+						<h3><strong>{{ service.title }}</strong></h3>
 					</header>
 					</a>
-					<ul class="services">
-						<li>Comprehensive psychoeducational evaluation to identify learning differences (dyslexia, dysgraphia, dyscalculia, and executive functioning)</li>
-						<li>Diagnostic Report including recommendation for therapy goals and school accommodations</li>
-						<li>Parent Meeting - Discussion of Findings & Next Steps</li>
+					<ul{% if service.list_class %} class="{{ service.list_class }}"{% endif %}>
+						{% for item in service.summary %}
+						<li>{{ item }}</li>
+						{% endfor %}
 					</ul>
 				</section>
 			</div>
-			<div class="col-4 col-12-narrower">
-				<section>
-					<span class="icon solid featured fa-comments"></span>
-					<a href="/services.html" style="text-decoration: none; color: inherit;">
-					<header>
-						<h3><strong>Therapy</strong></h3>
-					</header>
-					</a>
-					<ul>
-						<li>50-minute individualized and responsive therapy sessions with an <a href="https://www.orton-gillingham.com">Orton-Gillingham</a> Trained Provider</li>
-						<li>Explicit and systematic intervention in phonological awareness, phonics, spelling patterns, and morphology. Option of clinic, home, virtual or school-based</li>
-						<li>Integration of executive functioning skills needed to succeed in an academic setting</li>
-					</ul>
-				</section>
-			</div>
-			<div class="col-4 col-12-narrower">
-				<section>
-					<span class="icon solid featured fa-handshake"></span>
-					<a href="/services.html" style="text-decoration: none; color: inherit;">
-					<header>
-						<h3><strong>Consultation</strong></h3>
-					</header>
-					</a>
-					<ul>
-						<li><b>School Consultation</b> Collaboration meetings with the child's school team to help integrate successful therapeutic approaches into their classroom setting</li>
-						<li><b>Family Consultation</b> Up-skilling parents on how they can best support their child's literacy development in the home setting</li>
-					</ul>
-				</section>
-			</div>
+			{% endfor %}
 		</div>
 	</section>
 
 	<!-- Three -->
+	{% assign articles = site.articles | sort: "order" %}
 	<section id="articles" class="wrapper style3 container special">
 		<header class="major">
 			<h2>Discover more about learning differences</h2>
 		</header>
 
-		<div class="row">
+		{% for article in articles %}
+			{% assign mod = forloop.index0 | modulo: 2 %}
+			{% if mod == 0 %}<div class="row">{% endif %}
 			<div class="col-6 col-12-narrower">
 				<section>
-					<a href="/signs.html" class="image featured"><img src="/images/children_in_class.jpg" alt="Children in class" /></a>
+					<a href="{{ article.url }}" class="image featured"{% if article.external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+						<img src="/images/{{ article.image }}" alt="{{ article.image_alt }}" />
+					</a>
 					<section>
-						<a href="/signs.html" style="text-decoration: none; color: inherit;">
-							<header><h3>Signs of dyslexia</h3></header>
+						<a href="{{ article.url }}" style="text-decoration: none; color: inherit;"{% if article.external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+							<header><h3>{{ article.title }}</h3></header>
 						</a>
-						<p class="aln-left">Dyslexia looks different for children at different ages. Learn some of the common signs of dyslexia for preschool-aged children, early elementary schoolers, and older children.</p>
+						<p class="aln-left">{{ article.content | strip_html | strip }}</p>
 					</section>
 				</section>
 			</div>
-			<div class="col-6 col-12-narrower">
-				<section>
-					<a href="/orton-gillingham.html" class="image featured"><img src="/images/dyslexia_orton_gillingham.jpeg" alt="" /></a>
-					<section>
-						<a href="/orton-gillingham.html" style="text-decoration: none; color: inherit;">
-							<header><h3>Dyslexia and Orton-Gillingham</h3></header>
-						</a>
-						<p class="aln-left">Learn more about what dyslexia is and the proven Orton-Gillingham International approach we use at Young Minds.</p>
-					</section>
-				</section>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-6 col-12-narrower">
-				<section>
-					<a href="/misconceptions.html" class="image featured"><img src="/images/dyslexia_definition.jpg" alt="" /></a>
-					<section>
-						<a href="/misconceptions.html" style="text-decoration: none; color: inherit;">
-							<header><h3>Dyslexia misconceptions</h3></header>
-						</a>
-						<p class="aln-left">Dyslexia is a common learning difference, and misinformation is widespread. Debunk some of the more common myths and misconceptions about dyslexia.</p>
-					</section>
-				</section>
-			</div>
-			<div class="col-6 col-12-narrower">
-				<section>
-					<a href="https://www.speechtherapymexico.com/" class="image featured"><img src="/images/cwk_clinc.jpeg" alt="" /></a>
-					<section>
-						<a href="https://www.speechtherapymexico.com/" style="text-decoration: none; color: inherit;">
-							<header><h3>Communicate with Kate</h3></header>
-						</a>
-						<p class="aln-left">Concerned about your child's speech and language development? Reach out to our partner clinic, Communicate with Kate<code>&#8212;</code>a team of native English-speaking, bilingual, qualified speech & language pathologists offering services all throughout Mexico.</p>
-					</section>
-				</section>
-			</div>
-		</div>
+			{% if mod == 1 or forloop.last %}</div>{% endif %}
+		{% endfor %}
+
 	</section>
 
 </article>

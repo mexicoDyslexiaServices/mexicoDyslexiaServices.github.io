@@ -57,4 +57,40 @@ title: Page Title
 Don't edit that block — just edit the HTML content below it.
 
 ## Images
-Drop new image files into the `images/` folder, then reference them as `/images/your-file.jpg` in the HTML or front matter.
+
+**Step 1 — Add the file:** drop the photo into the `images/` folder.
+
+**Step 2 — Add it to a page** using one of these copy-paste templates:
+
+### Image on the right, text on the left
+```liquid
+<div class="row gtr-50">
+  <div class="col-8 col-12-narrower aln-left">
+
+    Your text content here.
+
+  </div>
+  {% include img-sidebar.html src="your-photo.jpg" alt="Describe the photo here" %}
+</div>
+```
+
+### Image on the right with a caption beneath it
+```liquid
+<div class="row gtr-50">
+  <div class="col-8 col-12-narrower aln-left">
+
+    Your text content here.
+
+  </div>
+  {% include img-sidebar.html src="your-photo.jpg" alt="Describe the photo" caption="Caption text here" %}
+</div>
+```
+
+### Full-width image (spans the whole section)
+```liquid
+<div class="row gtr-50">
+  {% include img-full.html src="your-photo.jpg" alt="Describe the photo here" %}
+</div>
+```
+
+**To update an existing photo:** replace the file in `images/` with the new one using the same filename, or update the filename in the relevant `_team/`, `_articles/`, or page file.

@@ -13,7 +13,7 @@ Three Jekyll Collections added, each as a folder of Markdown files:
 **`_team/`** — one file per team member
 - `featured: true` marks the owner (Celia), who gets a distinct layout on the About page
 - Bio prose goes in the Markdown body; a `<!-- break -->` comment splits the col-8 bio from the full-width closing paragraph
-- Specialists (Tica, Ellie) loop into a two-column grid automatically
+- Specialists (Tica, Nick, Anna) loop into a two-column grid automatically
 - Adding a new member = drop a new `.md` file in the folder
 
 **`_services/`** — one file per service (Assessment, Therapy, Consultation)
